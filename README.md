@@ -23,7 +23,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='bitfit-walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='bitfit-part2-walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with https://www.macupdate.com/app/mac/49461/licecap
