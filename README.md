@@ -1,10 +1,10 @@
 # Android Project 6 - *BitFit*
 
-Submitted by: **Deonna Owens**
+Submitted by: **Maize Booker**
 
 **BitFit** is a health metrics app that allows users to track their calorie intake
 
-Time spent: **8** hours spent in total
+Time spent: **10** hours spent in total
 
 ## Required Features
 
@@ -23,10 +23,9 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='bitfit-part2-walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with https://www.macupdate.com/app/mac/49461/licecap
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -40,7 +39,7 @@ I had issues transferring data between fragments but was able to get it figured 
 
 ## License
 
-    Copyright [2022] [Deonna Owens]
+    Copyright [2022] [Maize Booker]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

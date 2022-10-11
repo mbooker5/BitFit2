@@ -10,7 +10,6 @@ import androidx.fragment.app.Fragment
 
 
 class DashboardFragment : Fragment() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -24,6 +23,8 @@ class DashboardFragment : Fragment() {
 
         parentFragmentManager.setFragmentResultListener("log", this) { requestKey, bundle ->
             var result = Integer.parseInt(bundle.getString(TAG)) //90
+//            var totalCalories = LogFragment().totalCalories
+//            var numOfFoods = LogFragment().numOfFoods
             getMinMax(view, result)
         }
         return view
@@ -34,14 +35,26 @@ class DashboardFragment : Fragment() {
             LogFragment().apply {
             }
     }
+    var min = 0
+    var max = 0
+    var average = 0
     fun getMinMax(view: View, result: Int) {
 
-        var averageCals = view.findViewById<TextView>(R.id.averageCalsTv)
+//        var averageCals = view.findViewById<TextView>(R.id.averageCalsTv)
         var minCals = view.findViewById<TextView>(R.id.minCalsTv)
         var maxCals = view.findViewById<TextView>(R.id.maxCalsTv)
 
-        var min = result
-        var max = Integer.parseInt(maxCals.text.toString())
+        if ((min == 0) or (min > result)){
+            min = result
+        }
+
+        if ((max == 0) or (max < result)){
+            max = result
+        }
+
+//        average = totalCalories/numOfFoods
+
+//        var max = Integer.parseInt(maxCals.text.toString())
         var average = result
 
         if(min > max) {
@@ -51,6 +64,6 @@ class DashboardFragment : Fragment() {
         }
         minCals.text = min.toString()
         maxCals.text = max.toString()
-        averageCals.text = average.toString()
+//        averageCals.text = average.toString()
     }
 }

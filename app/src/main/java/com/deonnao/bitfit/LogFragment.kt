@@ -2,10 +2,7 @@ package com.deonnao.bitfit
 
 import android.annotation.SuppressLint
 import android.content.Context
-import android.content.Intent
-import android.database.DatabaseErrorHandler
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -13,7 +10,6 @@ import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
-import androidx.fragment.app.setFragmentResult
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -22,7 +18,9 @@ const val TAG = "ITEM"
 const val TAG2 = "CALORIES"
 class LogFragment : Fragment() {
 
-    var listOfItems = mutableListOf<Nutrition>()
+    public var listOfItems = mutableListOf<Nutrition>()
+    public val numOfFoods = listOfItems.size
+    public val totalCalories = 0
     lateinit var adapter: NutritionAdapter
     lateinit var recyclerView: RecyclerView
 
@@ -64,6 +62,7 @@ class LogFragment : Fragment() {
         val etCalories = view.findViewById<EditText>(R.id.etCalories)
         val submitBtn = view.findViewById<Button>(R.id.submitBtn)
 
+
         submitBtn.setOnClickListener {
             //Grab the text that the user inputs
             val item = foodItem.text.toString()
@@ -71,6 +70,7 @@ class LogFragment : Fragment() {
             val allItems = Nutrition(item, calories)
             listOfItems.add(allItems)
             adapter.notifyItemInserted(listOfItems.size - 1)
+//            totalCalories += Integer.parseInt(calories)
             //val intent = Intent(context, DashboardFragment::class.java)
             //intent.putExtra(TAG, calories)
             //Log.i(TAG, calories)

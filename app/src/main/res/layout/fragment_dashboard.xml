@@ -7,17 +7,17 @@
     tools:context=".DashboardFragment">
 
 
-    <TextView
-        android:id="@+id/tv1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="Average Calories:"
-        android:textColor="#000000"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <TextView-->
+<!--        android:id="@+id/tv1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:text="Average Calories:"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="25sp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
     <TextView
         android:id="@+id/tv2"
@@ -29,7 +29,8 @@
         android:textColor="#000000"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+        tools:ignore="MissingConstraints" />
+<!--    app:layout_constraintTop_toBottomOf="@+id/tv1"-->
 
     <TextView
         android:id="@+id/tv3"
@@ -43,17 +44,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv2" />
 
-    <TextView
-        android:id="@+id/averageCalsTv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
-        android:text="0"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <TextView-->
+<!--        android:id="@+id/averageCalsTv"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="24dp"-->
+<!--        android:text="0"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="30sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
     <TextView
         android:id="@+id/minCalsTv"
@@ -65,7 +66,8 @@
         android:textColor="#000000"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/averageCalsTv" />
+        tools:ignore="MissingConstraints" />
+<!--    app:layout_constraintTop_toBottomOf="@+id/averageCalsTv"-->
 
     <TextView
         android:id="@+id/maxCalsTv"
